@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Bootsrap Project 1 - Online Store</title>
   <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -56,13 +58,14 @@
                     <input type="search" class="form-control" placeholder="Search by item name..."/>
                   </div>
                </div>
-               
+            </form>
+            <form class="form-inline" role="form" id="item-form">
               <div class="form-group">
                  <label for="item" class="control-label">Add Item</label>
                  <div>
-                   <input type="text" class="form-control" placeholder="Item Name"/>
-                   <input type="text" class="form-control" placeholder="Description"/>
-                   <input type="number" class="form-control" placeholder="Price"/>
+                   <input type="text" class="form-control" placeholder="Item Name" name="itemName"/>
+                   <input type="text" class="form-control" placeholder="Description" name="itemDescription"/>
+                   <input type="number" class="form-control" placeholder="Price" name="itemPrice"/>
                      <button type="button" class="btn btn-default form-control">Add</button>
                  </div>
               </div>
@@ -119,5 +122,6 @@
  </div><!-- /Footer and Modal -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/display.js"></script>
 </body>
 </html>
