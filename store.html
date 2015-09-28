@@ -6,6 +6,10 @@
   <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
   <script src="js/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script></script>
+  <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
 </head>
 
 <body>
@@ -50,28 +54,29 @@
         </div><! -- /column 1 of size md-3 -->
          
         <! -- column 2 of size md-8 -->
-        <div class="col-md-8"><br/><br/><br/><br/>
+        <div class="col-md-8" id="column2"><br/><br/><br/><br/>
            <form class="form-inline" role="form">
                <div class="form-group">
-                  <label for="search" class="control-label">Search</label>
-                  <div class="">
-                    <input type="search" class="form-control" placeholder="Search by item name..."/>
+                  <label for="search" class="control-label"> Search</label> &nbsp;&nbsp;
+                  <div class="form-group">
+                    <input type="search" class="form-control" placeholder=" Search by item name..."/>
                   </div>
                </div>
             </form>
+            <br>
             <form class="form-inline" role="form" id="item-form">
               <div class="form-group">
                  <label for="item" class="control-label">Add Item</label>
-                 <div>
-                   <input type="text" class="form-control" placeholder="Item Name" name="itemName"/>
-                   <input type="text" class="form-control" placeholder="Description" name="itemDescription"/>
-                   <input type="number" class="form-control" placeholder="Price" name="itemPrice"/>
+                 <div class="form-group">
+                   <input type="name" class="form-control" placeholder="Item Name" name="itemName" required/>
+                   <input type="text" class="form-control" placeholder="Description" name="itemDescription" required/>
+                   <input type="number" class="form-control" placeholder="Price" name="itemPrice" required/>
                      <button type="button" class="btn btn-default form-control">Add</button>
                  </div>
               </div>
            </form>
            <br/>
-           <!-- concept of wells -->
+           <!-- concept of wells 
            <div class="well well-sm col-md-12">
               <div class="col-md-9">
                  <h2>Soocerball</h2>
@@ -84,7 +89,7 @@
                       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                   </button>
               </div> 
-           </div>
+           </div> -->
         </div><! -- /column 2 of size md-8 -->
   </div><!--  Main Content 2-column Layout -->
     

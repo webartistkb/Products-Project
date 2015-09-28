@@ -16,7 +16,7 @@ $(document).ready(function(e) {
          newDiv.append(divOneInNewDiv);
          newDiv.append(divTwoInNewDiv);
          divOneInNewDiv.append("<h2> " + val.itemName + "</h2><br><p>" +                                 val.itemDescription + "</p><br>");
-         divTwoInNewDiv.append('<form class="form-inline"><br><br><button type="button" class="btn btn-default btn-primary col-sm-8 fixedWidth">$' + val.itemPrice + '</button> &nbsp; <button id="' + val.id + '"type="button" class="btn btn-default   delete-btn" aria-label="Delete Item">'+'<span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></form>');
+         divTwoInNewDiv.append('<form class="form-inline"><br><br><button type="button" class="btn btn-default btn-primary col-sm-8 fixedWidth">$' + val.itemPrice + '</button> &nbsp; <button id="' + val.id + '"type="button" class="btn btn-default delete-btn" aria-label="Delete Item">'+'<span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></form>');
          mainWellsDiv.append(newDiv);
      });//end of each
   })//end of display
@@ -45,13 +45,13 @@ $(document).ready(function(e) {
       var saveDataOnServer = function(e){
         e.preventDefault();
         //validate the item form not working
-        /*$('#item-form').validate({
+        $('#item-form').validate({
              rules: {
                 itemName: "required",
                 itemDescription: "required",
                 itemPrice: "required"
              }
-        });*/
+        });
         
         var inputs = itemForm.find('input');
         console.log(inputs);
